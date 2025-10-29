@@ -28,10 +28,10 @@ Install SMK onto WSL
 ## Creating a simple mapkit project
 - For this exercise you can create a folder inside WSL folders under the (home) directory called "SMK_Creations"
 SMK_Creations_folder
-![SMK_Creations_folder](../Gif/Create_SMK_Example.gif)
+![SMK_Creations_folder](./Gif/Create_SMK_Example.gif)
 - In wsl change the directory to SMK_Creations. e.g. cd SMK_Creations
 - Enter 'smk create'. It will ask a number of questions about the initial set up of the application. Most are straight forward.
-![Create_SMK_Example](../Gif/Create_SMK_Example.gif)
+![Create_SMK_Example](./Gif/Create_SMK_Example.gif)
 - When asked to enter a package name of @bcgov/smk, enter as the stated example. This will create a folder within Node_modules\@bcgov that will contain key application files
 
 
