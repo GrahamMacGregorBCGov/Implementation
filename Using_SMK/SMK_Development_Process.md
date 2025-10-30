@@ -46,13 +46,15 @@ SMK_Creations_folder
 - Attributes. Which ones to display, which one to use as a title and the geometry attribute
 - Queries. Apply a query to the data to limit data visible
 - Template formatting
+
+  
 ![SMK_dataBC_layers](./Gif/SMK_dataBC_layers.png)
 
 - Add WMS Layers
 ![SMK_WMS_layers](./Gif/SMK_WMS_layers.png)
 
 - Import unique vector layers of various formats
-![SMK_import vector_layers](./Gif/SMK_import vector_layers.png)
+![SMK_import vector_layers](./Gif/SMK_import_vector_layers.png)
 
 - Add vector data from URL layers
 ![SMK_add_vector_URL_layers](./Gif/SMK_add_vector_URL_layers.png)
