@@ -25,7 +25,7 @@ Install SMK onto WSL
 - You may need to experiment in WSL to install additional libraries SMK uses like Node.
 
 
-## Creating a simple mapkit project
+## Creating a simple mapkit project in WSL
 - For this exercise you can create a folder inside WSL folders under the (home) directory called "SMK_Creations"
 SMK_Creations_folder
 ![SMK_Creations_folder](./Gif/Create_SMK_Example.png)
@@ -36,30 +36,31 @@ SMK_Creations_folder
 - When it asks to open the application select yes.
 ![Create_SMK_Example](./Gif/Create_SMK_Example.gif)
 
+## Creating a simple mapkit project in WSL
 - Now that you have a sample Simple Map Kit project created there are a number of editing functions that can be used to add data and modify their properties
-
-- Main editor screen. Select leaflet as map viewer
+  
+### Main editor screen. Select leaflet as map viewer
 ![SMK_main_edit_screen](./Gif/SMK_main_edit_screen.png)
 
-- DataBC layers can be added to the application. Each layer added has a pencil which can edit its properties. Properties include.
+### DataBC layers can be added to the application. 
+- Each layer added has a pencil which can edit its properties. Properties include.
 - Details. Min/Max Scale visibility, Opacity and name
 - Attributes. Which ones to display, which one to use as a title and the geometry attribute
 - Queries. Apply a query to the data to limit data visible
 - Template formatting
 
-  
 ![SMK_dataBC_layers](./Gif/SMK_dataBC_layers.png)
 
-- Add WMS Layers
+### Add WMS Layers
 ![SMK_WMS_layers](./Gif/SMK_WMS_layers.png)
 
-- Import unique vector layers of various formats
-![SMK_import vector_layers](./Gif/SMK_import_vector_layers.png)
+### Import unique vector layers of various formats
+![SMK_import_vector_layers](./Gif/SMK_import_vector_layers.png)
 
-- Add vector data from URL layers
+### Add vector data from URL layers
 ![SMK_add_vector_URL_layers](./Gif/SMK_add_vector_URL_layers.png)
 
-- Select available tools to add to the location and modify settings through the editing pencil
+### Select available tools to add to the location and modify settings through the editing pencil
 ![SMK_Tools](./Gif/SMK_Tools.png)
 
 ## Set up GitHub area in WSL to put code.
