@@ -28,21 +28,48 @@ Install SMK onto WSL
 ## Creating a simple mapkit project
 - For this exercise you can create a folder inside WSL folders under the (home) directory called "SMK_Creations"
 SMK_Creations_folder
-![SMK_Creations_folder](./Gif/Create_SMK_Example.gif)
-- In wsl change the directory to SMK_Creations. e.g. cd SMK_Creations
-- Enter 'smk create'. It will ask a number of questions about the initial set up of the application. Most are straight forward.
-![Create_SMK_Example](./Gif/Create_SMK_Example.gif)
-- When asked to enter a package name of @bcgov/smk, enter as the stated example. This will create a folder within Node_modules\@bcgov that will contain key application files
+![SMK_Creations_folder](./Gif/Create_SMK_Example.png)
 
+- In wsl change the directory to SMK_Creations. e.g. cd SMK_Creations
+- Enter 'smk create'. It will ask a number of questions about the initial set up of the application. Most are straight forward. See example
+- When asked to enter a package name of @bcgov/smk, enter as the stated example. This will create a folder within Node_modules/@bcgov that will contain key web map application files
+- When it asks to open the application select yes.
+![Create_SMK_Example](./Gif/Create_SMK_Example.gif)
+
+- Now that you have a sample Simple Map Kit project created there are a number of editing functions that can be used to add data and modify their properties
+
+- Main editor screen. Select leaflet as map viewer
+![SMK_main_edit_screen](./Gif/SMK_main_edit_screen.png)
+
+- DataBC layers can be added to the application. Each layer added has a pencil which can edit its properties. Properties include.
+- Details. Min/Max Scale visibility, Opacity and name
+- Attributes. Which ones to display, which one to use as a title and the geometry attribute
+- Queries. Apply a query to the data to limit data visible
+- Template formatting
+![SMK_dataBC_layers](./Gif/SMK_dataBC_layers.png)
+
+- Add WMS Layers
+![SMK_WMS_layers](./Gif/SMK_WMS_layers.png)
+
+- Import unique vector layers of various formats
+![SMK_import vector_layers](./Gif/SMK_import vector_layers.png)
+
+- Add vector data from URL layers
+![SMK_add_vector_URL_layers](./Gif/SMK_add_vector_URL_layers.png)
+
+- Select available tools to add to the location and modify settings through the editing pencil
+![SMK_Tools](./Gif/SMK_Tools.png)
 
 ## Set up GitHub area in WSL to put code.
-- Create a /github/(IdirName)/GitHub location which
+- Example /github/
+- When you SMK application is ready and complete you can copy it into the created folder. Making the repo is covered further down
 
 ## Make sure Visual Studio Code is installed on your computer
 [Website] https://code.visualstudio.com/
 - To connect VS Code to WSL. Open VS Code and Install WSL extension
+- When you have WSL open VSCode can connect to project folders with in WSL
 
-## Creating a GitHub repo to use Git Hub pages
+## Creating a GitHub repo to use GitHub pages under the bcgov organization
 - Create a Github pages from a simple map kit you will need to create a new repo under the bcgov organization. Do not make the repo under your own Github account.
 - When the Repo is created it can be cloned to the WSL github area in preperation to recive items created in Simple map kit.
 
