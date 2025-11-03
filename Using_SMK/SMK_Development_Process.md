@@ -39,7 +39,8 @@ SMK_Creations_folder
 ## Creating a simple mapkit project in WSL
 - Now that you have a sample Simple Map Kit project created there are a number of editing functions that can be used to add data and modify their properties
   
-### Main editor screen. Select leaflet as map viewer
+### Main editor screen. 
+- Select leaflet as map viewer
 ![SMK_main_edit_screen](./Gif/SMK_main_edit_screen.png)
 
 ### DataBC layers can be added to the application. 
