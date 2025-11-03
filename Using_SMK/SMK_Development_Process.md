@@ -12,7 +12,7 @@ The process will go through the following steps
 5. Set up a GitHub repo which to transfer your SMK project and deploy application on Github pages.
 
 ## Windows System for Linux
-1. Install Windows system for linux to use on windows.
+- Install Windows system for linux to use on windows.
 - Start by reading the [WSL install on windows](<https://learn.microsoft.com/en-us/windows/wsl/install>)
 - At the bottom of your file explorer you will see Linux and numerous folders within Linux
 - Under the home folder you can add additional folders to your liking. It is reccomened to make a SMK_Creations folder where you will make new applications and a Github folder whre you can manage Github folders that are cloned from github.
@@ -27,7 +27,7 @@ Install SMK onto WSL
 
 ## Creating a simple mapkit project in WSL
 - For this exercise you can create a folder inside WSL folders under the (home) directory called "SMK_Creations"
-SMK_Creations_folder
+
 ![SMK_Creations_folder](./Gif/Create_SMK_Example.png)
 
 - In wsl change the directory to SMK_Creations. e.g. cd SMK_Creations
