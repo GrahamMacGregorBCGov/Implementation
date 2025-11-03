@@ -37,7 +37,8 @@ Install SMK onto WSL
 
 - Now that you have a sample Simple Map Kit project created there are a number of editing functions that can be used to add data and modify their properties.
 
-- Main editor screen. Select leaflet as map viewer
+### SMK Main editor screen. 
+- Select leaflet as map viewer
 ![SMK_main_edit_screen](./Gif/SMK_main_edit_screen.png)
 
 - DataBC layers can be added to the application. Each layer added has a pencil which can edit its properties. Properties include.
