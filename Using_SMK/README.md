@@ -27,7 +27,7 @@ Install SMK onto WSL
 
 ## Creating a simple mapkit project
 - For this exercise you can create a folder inside WSL folders under the (home) directory called "SMK_Creations"
-![SMK_Creations_folder](./Gif/Create_SMK_Example.gif)
+![SMK_Creations_folder](./Gif/Create_SMK_Example.png)
 
 - In WSL change the directory to SMK_Creations. e.g. cd SMK_Creations
 - Enter 'smk create'. It will ask a number of questions about the initial set up of the application. Most are straight forward. See example 
@@ -41,6 +41,8 @@ Install SMK onto WSL
 - Select leaflet as map viewer
 ![SMK_main_edit_screen](./Gif/SMK_main_edit_screen.png)
 
+
+### SMK add Data BC Layers
 - DataBC layers can be added to the application. Each layer added has a pencil which can edit its properties. Properties include.
 - Details. Min/Max Scale visibility, Opacity and name
 - Attributes. Which ones to display, which one to use as a title and the geometry attribute
@@ -48,42 +50,87 @@ Install SMK onto WSL
 - Template formatting
 ![SMK_dataBC_layers](./Gif/SMK_dataBC_layers.png)
 
+### SMK add WMS Layers
 - Add WMS Layers
 - These have less editing properties do to being a WMS file.
 ![SMK_WMS_layers](./Gif/SMK_WMS_layers.png)
 
+### SMK add other data
 - Import unique vector layers of various formats
 - Unique data to your project can be added to the SMK project
 - Data types include GeoJSON, KML, Shapefile, CSV
 ![SMK_import vector_layers](./Gif/SMK_import_vector_layers.png)
 
+### SMK add URL data sources
 - Add vector data from URL layers
 - GIS data from URL links can be aded to an application
 ![SMK_add_vector_URL_layers](./Gif/SMK_add_vector_URL_layers.png)
 
+### SMK add tools available to the application
 - Select available tools to add to the location and modify settings through the editing pencil
-- Tools have
+- Tools have properties to control look and function
 ![SMK_Tools](./Gif/SMK_Tools.png)
 
 ## Make sure Visual Studio Code is installed on your computer
 [Website] https://code.visualstudio.com/
 - To connect VS Code to WSL. Open VS Code and Install WSL extension.
-- When you have WSL open VSCode can connect to project folders within WSL folders. WSL needs to be open to access them
+- When you have WSL open VSCode can connect to project folders within WSL folders. WSL needs to be open to access.
 
 ## Creating a GitHub repo to use GitHub pages under the bcgov organization
-- Create a Github pages from a simple map kit you will need to create a new GitHub repo under the bcgov organization. Do not make the repo under your own Github account.
-- When the Repo is created it can be cloned to the WSL github area in preperation to recive items created in Simple map kit.
+- Create a Github pages for a simple map kit application you will need to create a new GitHub repo under the bcgov organization. Do not make the repo under your own Github account.
+- When the empty Repo is created it can be cloned to the WSL github area in preperation to receive items created in Simple map kit.
 [Website] https://learn.microsoft.com/en-us/azure/developer/javascript/how-to/with-visual-studio-code/clone-github-repository?tabs=activity-bar
 
 ## Set up GitHub area in WSL to put code.
 - Example /github/(your project name created in GitHub)
-- When you SMK application is ready and complete you can copy it into the created Github folder created when cloning the empty Repo. Once in the GitHub folder you will make some edits to the created application for it to work in GitHub pages.
+- When you SMK application is ready and complete you can copy it into the created Github folder cloned from GitHub. Once in the GitHub folder you will make some edits to the created application for it to work in GitHub pages.
 
 ## Copying and Modifying SMK project to work in GitHub pages.
-- test
+- Take your SMK project that you created and copy the project to the GitHub repo folder. Only include the following files and folders
+- The HTML file, JSON files and javascript file.
+- The whole assets and layers folders
+- Inside the node_modules folder take the project folder you made during SMK creation e.g. @bcgov. Inside there is a smk folder. Copy this smk folder into the assets folder previously copied across.
+- To fix a little bug rename the _base folder to base. \smk\dist\assets\src\theme\_base
+
+- in the smk.js file (\assets\smk\dist) modify /_base to /base
+_____________________________________________
+Example:
+    include.tag( "theme-base",
+        { loader: "group", tags: [
+            { loader: "style", url: "theme/base/command.css" },
+            { loader: "style", url: "theme/base/elastic.css" },
+            { loader: "style", url: "theme/base/map-frame.css" },
+            { loader: "style", url: "theme/base/resets.css" },
+            { loader: "style", url: "theme/base/variables.css" },
+            "material-icons"
+        ] }
+_____________________________________________
+
+- Modify the source index.html to reference the location of the javascript files and css files copied across.
+_____________________________________________
+Example:
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Testing SMK</title>
+        <link rel="stylesheet" type="text/css" href="./assets/style.css"/>
+    </head>
+
+    <body>
+        <header>Testing SMK</header>
+
+        <article>
+            <div id="smk-map-frame"></div>
+        </article>
+
+        <footer>Application constructed by smk-cli at 2025-08-21T22:09:39.688Z</footer>
+
+        <script src="./assets/smk/dist/smk.js"></script>
+        <script src="./smk-init.js"></script>
+    </body>
+</html>
+_____________________________________________
 
 ## Push SMK project and edits back up to GitHub repo
-1. Review the content in the GIS Pantry [_start-here](../_start-here) folder.
-- Start by reading the [GIS_Pantry_QuickStart Doc](<QuickStart - BEGIN HERE.md>)
-GeoBC Implementation Team repository for work we do.
-
+- When the SMK project has been edited in the GitHub repo
