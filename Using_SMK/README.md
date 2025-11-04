@@ -95,7 +95,7 @@ Install SMK onto WSL
 - in the smk.js file (\assets\smk\dist) modify /_base to /base
 _____________________________________________
 Example:
-    include.tag( "theme-base",
+    include.tag ("theme-base",
         { loader: "group", tags: [
             { loader: "style", url: "theme/base/command.css" },
             { loader: "style", url: "theme/base/elastic.css" },
@@ -133,4 +133,6 @@ Example:
 _____________________________________________
 
 ## Push SMK project and edits back up to GitHub repo
-- When the SMK project has been edited in the GitHub repo
+- When the SMK project has been edited in the GitHub repo it can be pushed up into GitHub to populate with the SMK project.
+- In GitHub under settings set up pages to deploy the application to a URL
+![GitHub_pages](./Gif/GitHub_pages.png)
