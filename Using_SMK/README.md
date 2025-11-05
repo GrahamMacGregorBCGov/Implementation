@@ -2,6 +2,8 @@
 
 Simple Mapkit allows users to create straight forward web mapping applications. These applications can then be modified and prepared for web deployment in a variety of methods. For the following example it will explain how to set up a SMK project within windows system for Linux (WSL) and deploy to GitHub pages as a stand alone web map.
 
+## Please note. This method is not a secure website method. So not senitive government or project data should be shown on GitHub pages
+
 
 The process will go through the following steps
 
@@ -136,3 +138,6 @@ _____________________________________________
 - When the SMK project has been edited in the GitHub repo it can be pushed up into GitHub to populate with the SMK project.
 - In GitHub under settings set up pages to deploy the application to a URL
 ![GitHub_pages](./Gif/GitHub_pages.png)
+
+- A sample GitHub pages can be found here. https://github.com/GrahamMacGregorBCGov/SMK_test.github.io
+- The associate web page for is is as follows. https://grahammacgregorbcgov.github.io/SMK_test.github.io/
