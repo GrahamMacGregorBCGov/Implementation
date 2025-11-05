@@ -14,10 +14,10 @@ The process will go through the following steps
 5. Set up a GitHub repo which to transfer your SMK project and deploy application on Github pages.
 
 ## Windows System for Linux
-1. Install Windows system for linux to use on windows.
+- Install Windows system for linux to use on windows.
 - Start by reading the [WSL install on windows](<https://learn.microsoft.com/en-us/windows/wsl/install>)
-- At the bottom of your file explorer you will see Linux and numerous folders within Linux
-- Under the home folder you can add additional folders to your liking. It is reccomened to make a SMK_Creations folder where you will make new applications and a Github folder whre you can manage Github folders that are cloned from github.
+- When installed and started you will see bottom of your file explorer Linux and numerous folders within Linux
+- Under the home folder you can add additional folders to meet your needs. It is reccomened to make a SMK_Creations folder where you will make new applications and a Github folder whre you can manage Github folders that are cloned from GitHub.
 
 
 ## Install Simple Map kit (SMK) on WSL
@@ -29,10 +29,10 @@ Install SMK onto WSL
 
 ## Creating a simple mapkit project
 - For this exercise you can create a folder inside WSL folders under the (home) directory called "SMK_Creations"
-![SMK_Creations_folder](./Gif/Create_SMK_Example.png)
+![SMK_Creations_folder](./Gif/SMK_Creations_folder.png)
 
 - In WSL change the directory to SMK_Creations. e.g. cd SMK_Creations
-- Enter 'smk create'. It will ask a number of questions about the initial set up of the application. Most are straight forward. See example 
+- Enter 'smk create'. It will ask a number of questions about the initial set up of the application. Most are straight forward. See example below.
 - When asked to enter a package name of @bcgov/smk, enter as the stated example. This will create a folder within Node_modules/@bcgov that will contain key web map application files
 - When it asks to open the application select yes.
 ![Create_SMK_Example](./Gif/Create_SMK_Example.gif)
@@ -84,17 +84,17 @@ Install SMK onto WSL
 [Website] https://learn.microsoft.com/en-us/azure/developer/javascript/how-to/with-visual-studio-code/clone-github-repository?tabs=activity-bar
 
 ## Set up GitHub area in WSL to put code.
-- Example /github/(your project name created in GitHub)
+- Clone your new empty repo into a WSL folder. Example /github/(your project name created in GitHub)
 - When you SMK application is ready and complete you can copy it into the created Github folder cloned from GitHub. Once in the GitHub folder you will make some edits to the created application for it to work in GitHub pages.
 
 ## Copying and Modifying SMK project to work in GitHub pages.
 - Take your SMK project that you created and copy the project to the GitHub repo folder. Only include the following files and folders
-- The HTML file, JSON files and javascript file.
-- The whole assets and layers folders
+- The HTML file, JSON files and javascript files in the main SMK folder.
+- The whole assets and layers folders.
 - Inside the node_modules folder take the project folder you made during SMK creation e.g. @bcgov. Inside there is a smk folder. Copy this smk folder into the assets folder previously copied across.
-- To fix a little bug rename the _base folder to base. \smk\dist\assets\src\theme\_base
+- To fix a little bug rename the _base folder to base. e.g. \smk\dist\assets\src\theme\base
 
-- in the smk.js file (\assets\smk\dist) modify /_base to /base
+- in the smk.js file (\assets\smk\dist) modify the javascript code from /_base to /base
 _____________________________________________
 Example:
     include.tag ("theme-base",
@@ -134,8 +134,8 @@ Example:
 </html>
 _____________________________________________
 
-## Push SMK project and edits back up to GitHub repo
-- When the SMK project has been edited in the GitHub repo it can be pushed up into GitHub to populate with the SMK project.
+## Push SMK project and edits back up to GitHub repo and make a website.
+- When the SMK project has been edited in the GitHub repo it can be pushed up into GitHub to populate with the SMK project data and folders.
 - In GitHub under settings set up pages to deploy the application to a URL
 ![GitHub_pages](./Gif/GitHub_pages.png)
 
