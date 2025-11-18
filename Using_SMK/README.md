@@ -2,6 +2,8 @@
 
 Simple Mapkit allows users to create straight forward web mapping applications. These applications can then be modified and prepared for web deployment in a variety of methods. For the following example it will explain how to set up a SMK project within windows system for Linux (WSL) and deploy to GitHub pages as a stand alone web map.
 
+The Example will also describe deploying a simple webmap on a local drive in a more secure location and have the client start up a virtual server in python and to be able to view and interact with the Application. 
+
 ## Please note. This method is not a secure website method. So not senitive government or project data should be shown on GitHub pages
 
 
@@ -141,3 +143,19 @@ _____________________________________________
 
 - A sample GitHub pages can be found here. https://github.com/GrahamMacGregorBCGov/SMK_test.github.io
 - The associate web page for is is as follows. https://grahammacgregorbcgov.github.io/SMK_test.github.io/
+
+
+## Use the web application on a local government computer drive.
+
+1. Python needs to be installed on the computer if it has not been already.
+    - In the windows search enter "Python" and Get the most recent version of python available in the Microsoft store. When you press Get it will take a few minutes for python to install.
+
+2. Copy the SMK application previously created to a local drive of choice (copy the whole folder). e.g. Z:/Jsmith/local/sandbox/The_SMK_Application
+
+3. In Windows search enter cmd and open the DOS command prompt.
+    a. Change directory in cmd. e.g. cd Z:/Jsmith/local/sandbox/The_SMK_Application
+    b. Start a local virtual python server. e.g. python -m http.server 8080
+    c. The command prompt should say somthing like this. Serving HTTP on :: port 8080 (http://[::]:8080/) ...
+    d. Open a web browser Chrome or Edge and then paste this link into the web browser. http://localhost:8080/
+
+The SMK map application should open and be visible in the web browser.
